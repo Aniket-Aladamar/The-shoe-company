@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy passes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="margin-left: 41%; font-family: cursive;">Srishti 2023 Passes</h1>
+    <div class="container">
+    <form>
+            <label>Name</label><br>
+            <input type="txt" required placeholder="Enter your full name">
+            <br><br>
+            <label>Email</label><br>
+            <input type="email" id="email" required placeholder="xyz@abc.com">
+            <br><br>
+            <label>Phone number</label><br>
+            <input type="number" required style="width: 40px;" placeholder="+">
+            <input type="number" required placeholder="00000 0000">
+            <br><br>
+            <label>Number of passes</label>
+            <input type="number" required placeholder="0" style="width: 30px; border: 1px solid; border-radius: 5px;">
+            <br><br>
+            <label>Pass type:</label><br>
+            <input type="radio" name="type" style="margin-left: 2%; padding: 10px;
+            width: 10%;" checked value="Regular" id="regular">
+            <label style="padding-left: 0px;">Regular</label>
+            <br>
+            <input type="radio" name="type" style="margin-left: 2%; padding: 10px;
+            width: 10%;" value="Premium" id="Premium">
+            <label style="padding-left: 0px;">Premium</label>
+
+            <br><br>
+            <label>Date</label>
+            <input type="date">
+            <br><br>
+            <label>Timings</label>
+            <select style="padding:15px; border-radius: 5px; border: 1px solid white; background-color: transparent;">
+                <option>11 am</option><br>
+                <option>2 pm</option><br>
+                <option>5 pm</option><br>
+            </select>
+            <br><br>
+            <label>Any specifications?</label><br>
+            <input type="text">
+            <br><br>
+            <input type="checkbox" style="margin-left: 2%; padding: 10px;
+            width: 10%;" required>
+            <label >I agree to all the <b>Terms and Conditions</b></label>
+            <br><br>
+            <button type="submit" onclick="submit()">Proceed</button>
+        </form>
+        
+        <p id="display"></p>
+        <script>
+          function submit(){
+      //       var emailInput = document.getElementById('emailInput').value;
+      // var isValid = emailInput.includes('@') && /\.(com|edu|org|net)$/.test(emailInput);
+
+      // if (isValid) {
+      //   alert('Email ID is valid!');
+      // } else {
+      //   alert('Please enter a valid Email ID with one of the following domain extensions: .com, .edu, .org, .net');
+      // }
+
+
+        var a=document.getElementById("regular")
+        if(a.checked==true){
+          document.getElementById("display").innerHTML="regular"
+          console.log("hlo")
+        }
+        if(document.getElementById("Premium").checked==true){
+          document.getElementById("display").innerHTML="premium"
+          console.log("hi")
+        }
+      }
+
+        </script>
+    </div>
+</body>
+</html>

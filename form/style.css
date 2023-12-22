@@ -1,0 +1,49 @@
+
+.container{
+  position: absolute;
+  background-color: rgb(251 104 96 / 75%);
+  top: 50%;
+  left: 50%;
+  line-height: 30px;
+  transform: translate(-50%,-30%);
+  margin-bottom: 150px;
+  width: 600px;
+  border: 2px solid rgb(255, 255, 255);
+  /* border-radius: 20px; */
+  /* padding-inline: 150px; */
+  box-shadow: 18px 29px 82px rgb(255, 255, 240);
+  padding: 20px 0 20px 0;
+}
+body
+{
+  background-image: url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2021/10/Pastel-Mix-Background-Graphics-10285128-1-1-580x387-1-e1656152839151.png?fit=580%2C387&ssl=1);
+  background-size: cover;
+}
+label
+{
+  padding: 30px;
+  color: rgb(0, 0, 0);
+  text-decoration:none;
+  font-size: 20px;
+}
+input
+{
+  background-color: transparent;
+  border: none;
+  color: aliceblue;
+  border-bottom: 2px solid;
+  padding: 5px;
+  width: 50%;
+  margin-left: 5%;
+}
+::placeholder
+{ 
+  color: rgb(253, 232, 232);
+}
+button
+{
+  padding: 10px;
+  border-radius: 5px;
+  margin-inline: 42%;
+  font-size: 16px;
+}
